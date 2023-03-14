@@ -2,16 +2,25 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 
 body{
+    width: 100vw;
     background-color: #141414;  
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
     color:  #fcf9ee;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     }
   
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
     nav{
       width: 100vw;
       height: 13vh;
@@ -23,7 +32,7 @@ body{
     }
   
     #design-name{
-      transform: rotate(270deg) translate3D(-5vw, -7vh,0); 
+      transform: rotate(270deg) translate3D(-10vw, -5vh,0); 
       font-size: 1.5vw;
       letter-spacing: -0.1vw;
       font-weight: 300;
@@ -31,15 +40,9 @@ body{
   
     #logo-img{
     margin-left: 50%;
-    transform: translateY(-12vh);
+    transform: translateY(-8vh);
+    width: 4vw;
     }
-
-    #logo-img img{
-        position: absolute;
-        width: 3vw;
-        transform: translate(-5vw, 1vh);
-    }
-
     #first-section{
         width: 65vw;
         margin-left:16vw;
@@ -74,11 +77,11 @@ body{
   .tree{
     grid-column: 13;
     grid-row: 2;
-     font-size:5vw;
-     text-align: center;
-     letter-spacing: -0.3vw;
-     line-height: 8vh;
-     padding-top: 3vh;
+    font-size:5vw;
+    text-align: center;
+    letter-spacing: -0.3vw;
+    line-height: 8vh;
+    padding-top: 3vh;
   }
 
   .img-showcase img{
@@ -123,16 +126,176 @@ body{
   }
 
   .ten{
-    transform: translate3d(54vw, 143vh, 0);
+    transform: translate3d(54vw, 160vh, 0);
     font-size: 1.8vw;
     font-weight: 100;
   }
 
   #circle{
     transform: translate3d(10vw, -8vh, 0);
+    width: 5vw;
+
   }
 
   #arrow{
     transform: translate3d(11vw, -17vh, 0);
     width: 3vw;
+  }
+
+  .second-section{
+    font-size: 2vw;
+    color: #141414;
+    margin-top: 40vh;
+    margin-bottom: 20vh;
+    width: 100vw;
+    height: 11vh;
+    background-color: #ddc92a;
+    display: flex;
+    align-items: center;
+  }
+
+  .third-section{
+    width: 80vw;
+    margin-left:25vw;
+    padding-top:18vh;
+    padding-bottom: 20vh;
+    justify-content: end;
+    display: grid;
+    grid-template-columns: repeat(10, 8vw);
+    grid-template-rows: repeat(4, 8vh);
+  }
+
+  .about{
+    font-size: 4vw;
+
+  }
+
+  .eleven{
+    font-weight: 100;
+    padding-top: 2vh;
+    font-size: 1.6vw;
+    text-decoration: underline;
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+
+  .twelve{
+    grid-row: 1;
+    grid-column: 3/10;
+  }
+
+  .thirteen{
+    grid-row: 2;
+    grid-column: 1/10;
+  }
+
+  .forteen{
+    grid-row: 3;
+    grid-column: 1/10;
+  }
+
+  .fifteen{
+    grid-row: 4;
+    grid-column: 1/10;
+  }
+  
+  .forth-section{
+
+    column-gap: 4vw;
+    width: 200vw;
+    padding-top: 5vh;
+    padding-bottom: 35vh;
+    transform: translateX(20vw);
+  }
+
+  .shoes-container{
+    display: flex;
+    overflow: hidden;  
+    column-gap: 4vw; 
+    width: 200vw;
+  }
+  
+  .shoes-showcase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: 70vh;
+    background-color: #e7d6c4;
+    overflow: hidden;   
+    padding-bottom: 7vh; 
+  }
+
+  .shoe-img{
+    width: 22vw;
+    margin-bottom: -8vh;
+  }
+
+  .unisex{
+    width: 6vw;
+  }
+
+  .season{
+    color: #141414;
+    font-size: 0.8vw;
+    font-weight: 500;
+    padding-top: 1.5vh;
+  }
+
+  .shoes-name{
+    font-size: 5vw;
+    color: #141414;
+    font-weight: 400;
+    letter-spacing: -0.1vw;
+    font-family: 'Anton', sans-serif;
+}
+
+.old-price{
+    text-decoration: line-through;
+    font-size: 1vw;
+    letter-spacing: 0.5vw;
+    color: #141414;
+}
+
+.price{
+    color: #141414;
+    font-size: 3vw;
+
+}
+
+
+.shop-all{
+    transform: translate3d(50vw, 10vh, 0);
+    font-size: 2vw;
+    font-weight: 100;
+  }
+
+
+#arrow2{
+    width: 3vw;
+    transform: translate3d(-1.3vw, 1vh,0);
+
+}
+
+#circle2{
+    width: 5vw;
+    transform: translate3d(3vw, 3vh,0);
+  }
+
+  .fifth-section{
+
+  }
+
+  .fifth-section svg{
+    width: 7vw;
+    transform: translate3d(50vw, -10vh, 0);
+  }
+
+  .quote{
+    display: none;
+  }
+
+  .active{
+    display: flex;
   }
