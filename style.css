@@ -8,6 +8,7 @@ body{
     background-color: #141414;  
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     font-family: 'Oswald', sans-serif;
     color:  #fcf9ee;
     -ms-overflow-style: none;
@@ -17,6 +18,7 @@ body{
 body::-webkit-scrollbar {
     display: none;
   }
+
 
 
     nav{
@@ -138,11 +140,14 @@ body::-webkit-scrollbar {
 
   #arrow{
     width: 3vw;
+    pointer-events: none
   }
 
   #circle{
     width: 5vw;
-    transform: translate3d(4.5vw, 15px, 0);  }
+    transform: translate3d(4.5vw, 15px, 0); 
+    transition: 0.3s ease-in-out; 
+}
 
   .yellow-band{
     font-size: 2vw;
@@ -682,3 +687,25 @@ body::-webkit-scrollbar {
     height: 20vh;
   }
 }
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }}
+
+    @keyframes reverseRotate{
+        0%{
+            transform: rotate(360deg);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }}

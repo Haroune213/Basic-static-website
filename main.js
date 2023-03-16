@@ -4,6 +4,10 @@ var movingText1= document.getElementById("movingtxt1")
 var movingText2= document.getElementById("movingtxt2")
 var shoesSlider= document.getElementById("shoes-container")
 var slider= document.getElementById("forth")
+var circle= document.getElementById("circle")
+var arrow= document.getElementById("arrow")
+var circle2= document.getElementById("circle2")
+var arrow2= document.getElementById("arrow2")
 var text1pos=0
 var text2pos= 0
 var pressed= false
@@ -11,6 +15,51 @@ let startX;
 let x;
 let sliderPosition=0;
 let clickedPosition;
+
+
+
+circle.addEventListener("mouseenter",  ()=>{
+    arrow.style.animation = "rotate 0.5s ease-out"
+    circle.style.transform="translate3d(4.5vw, 15px, 0) scale(1.3)"
+})
+
+circle.addEventListener("mouse",  ()=>{
+    arrow.style.animation = "rotate 0.5s ease-out"
+    circle.style.transform="translate3d(4.5vw, 15px, 0) scale(1.3)"
+})
+
+circle.addEventListener("mouseout",  ()=>{
+arrow.style.animation = "reverseRotate 0.5s ease-out"
+circle.style.transform="translate3d(4.5vw, 15px, 0) scale(1)"
+})
+
+circle.addEventListener("mouseleave",  ()=>{
+    arrow.style.animation = "reverseRotate 0.5s ease-out"
+    circle.style.transform="translate3d(4.5vw, 15px, 0) scale(1)"}
+    )
+
+
+
+
+    circle2.addEventListener("mouseenter",  ()=>{
+        arrow2.style.animation = "rotate 0.5s ease-out"
+        circle2.style.transform="translate3d(4vw, 3vh,0) scale(1.3)"
+    })
+    
+    circle2.addEventListener("mouse",  ()=>{
+        arrow2.style.animation = "rotate 0.5s ease-out"
+        circle2.style.transform="translate3d(4vw, 3vh,0) scale(1.3)"
+    })
+    
+    circle2.addEventListener("mouseout",  ()=>{
+    arrow2.style.animation = "reverseRotate 0.5s ease-out"
+    circle2.style.transform="translate3d(3vw, 3vh,0) scale(1)"
+    })
+    
+    circle2.addEventListener("mouseleave",  ()=>{
+        arrow2.style.animation = "reverseRotate 0.5s ease-out"
+        circle2.style.transform="translate3d(3vw, 3vh,0) scale(1)"}
+        )
 
 function scrollDetection(e){
     if(scrollPosition < window.scrollY){
@@ -67,6 +116,7 @@ slider.addEventListener("mousemove",(e)=>{
         shoesSlider.style.transform=`translateX(${(500)}px)`
     }
 })
+
 
 
 setInterval(textMoving,15)
