@@ -37,9 +37,9 @@ body::-webkit-scrollbar {
     }
   
     #logo-img{
-    margin-left: 50%;
-    transform: translate3D(-3vw, -10vh, 0);
     width: 7vw;
+    transform: translateX(-45vw) translateY(0vh);
+    transition: 0.5s ease-in-out;
     }
 
     #first-section{
@@ -149,11 +149,28 @@ body::-webkit-scrollbar {
     color: #141414;
     margin-top: 30vh;
     margin-bottom: 20vh;
-    width: 100vw;
+    width: 400vw;
     height: 11vh;
     background-color: #ddc92a;
     display: flex;
     align-items: center;
+  }
+
+  #movingtxt1{
+    width: 118vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #movingtxt2{
+    width: 119vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .square{
+    padding: 1vw;
+    font-size: 0.7vw;
   }
 
   .third-section{
@@ -211,11 +228,13 @@ body::-webkit-scrollbar {
 
   }
 
-  .shoes-container{
+  #shoes-container{
     display: flex;
     overflow: hidden;  
     column-gap: 4vw; 
     width: 400vw;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
   }
   
   .shoes-showcase{
